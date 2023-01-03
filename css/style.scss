@@ -1,11 +1,12 @@
 /*Folha de estilo do site individual HTML, CSS e JavaScript*/
+@import "./cores.scss";
 
 /*Smartphone Portrait >>>>>>>>>>>>>>>>>*/
 
 /*Smartphone Landscape resoluções superiores a 576px >>>>>>>>>>>>>>>>*/
 @media(min-width: 576px){
     body{
-        background-color: aqua;
+        background-color: $primaryCssColor;
     } 
 }
 /*Tablet Portrait >>>>>>>>>>>>>>>>>>>>>*/
