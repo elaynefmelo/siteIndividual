@@ -1,3 +1,29 @@
-body{
-    background-color: red;
+/*Folha de estilo do site individual HTML, CSS e JavaScript*/
+
+/*Smartphone Portrait >>>>>>>>>>>>>>>>>*/
+
+/*Smartphone Landscape resoluções superiores a 576px >>>>>>>>>>>>>>>>*/
+@media(min-width: 576px){
+    body{
+        background-color: aqua;
+    } 
+}
+/*Tablet Portrait >>>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 768px){
+    body{
+        background-color: yellow;
+    }   
+}
+/*Tablet Landscape >>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 992px){
+    body{
+        background-color: orange;
+    }   
+}
+/*PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 1200px){
+    body{
+        background-color: red;
+    }
+    
 }
