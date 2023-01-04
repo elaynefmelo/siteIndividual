@@ -1,6 +1,25 @@
 /*Folha de estilo do site individual HTML, CSS e JavaScript*/
 @import "./cores.scss";
 
+//css reset
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    size: 1em; //1em equivale a 16px
+}
+
+.Container{
+    margin: 0 auto;
+    background-color: #0fff0f;
+}
+
 /*Smartphone Portrait >>>>>>>>>>>>>>>>>*/
 
 /*Smartphone Landscape resoluções superiores a 576px >>>>>>>>>>>>>>>>*/
@@ -8,23 +27,39 @@
     body{
         background-color: $primaryCssColor;
     } 
+    /*layout*/
+    .Container{
+        max-width: 540px;
+    }
 }
 /*Tablet Portrait >>>>>>>>>>>>>>>>>>>>>*/
 @media(min-width: 768px){
     body{
         background-color: yellow;
-    }   
+    }  
+    /*layout*/
+    .Container{
+        max-width: 720px;
+    } 
 }
 /*Tablet Landscape >>>>>>>>>>>>>>>>>>>>*/
 @media(min-width: 992px){
     body{
         background-color: orange;
-    }   
+    }  
+    /*layout*/
+    .Container{
+        max-width: 960px;
+    } 
 }
 /*PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media(min-width: 1200px){
     body{
         background-color: red;
+    }
+    /*layout*/
+    .Container{
+        max-width: 1140px;
     }
     
 }
