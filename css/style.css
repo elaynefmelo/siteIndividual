@@ -12,17 +12,71 @@ body {
   size: 1em;
 }
 
+/*Layout*/
 .Container {
   margin: 0 auto;
-  background-color: #0fff0f;
+}
+
+.Flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Topo fixar o topo no canto inferior direito */
+#topo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+header {
+  background-color: #000000;
 }
 
 /*Smartphone Portrait >>>>>>>>>>>>>>>>>*/
+/*cabeçalho*/
+header {
+  height: 60px;
+}
+header #logo img {
+  width: 128px;
+  height: 128px;
+}
+header nav ul {
+  list-style: none;
+  background-color: #343538;
+  height: 100vh;
+  position: fixed;
+  top: 60px;
+  right: -100%;
+  width: 100%;
+  transition: all 0.5s;
+}
+header nav ul li {
+  padding: 20px;
+  border-bottom: 1px solid #a9a9a9;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#check {
+  display: none;
+}
+
+label {
+  color: #FFFFFF;
+  font-size: 2.5em;
+  padding-right: 15px;
+}
+
+#check:checked ~ ul {
+  right: 0;
+}
+
 /*Smartphone Landscape resoluções superiores a 576px >>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
-  body {
-    background-color: #264DE4;
-  }
   /*layout*/
   .Container {
     max-width: 540px;
@@ -30,9 +84,6 @@ body {
 }
 /*Tablet Portrait >>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px) {
-  body {
-    background-color: yellow;
-  }
   /*layout*/
   .Container {
     max-width: 720px;
@@ -40,9 +91,6 @@ body {
 }
 /*Tablet Landscape >>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
-  body {
-    background-color: orange;
-  }
   /*layout*/
   .Container {
     max-width: 960px;
@@ -50,11 +98,40 @@ body {
 }
 /*PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px) {
-  body {
-    background-color: red;
-  }
   /*layout*/
   .Container {
-    max-width: 1140px;
+    max-width: 100%;
+  }
+  .Flex {
+    width: 100%;
+  }
+  /* Cabeçalho */
+  header {
+    height: 130px;
+  }
+  header #logo img {
+    width: 260px;
+    height: 260px;
+    padding-left: 10px;
+  }
+  header nav ul {
+    position: static;
+    height: auto;
+    background-color: transparent;
+    margin-top: 50px;
+    padding-right: 20px;
+  }
+  header nav ul li {
+    float: left;
+    border: 0;
+  }
+  header nav ul li a {
+    font-size: 2em;
+  }
+  header nav ul li a:hover {
+    color: #656568;
+  }
+  label {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

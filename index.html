@@ -18,8 +18,25 @@
 </head>
 <body>
     <!--Cabeçalho -->
-    <header>
-        <div class="Container">
+    <header id="inicio">
+        <div class="Container Flex">
+            <div id="logo">
+                <img src="./img/logo.png" alt="HTML5, CSS3 e JavaScript">
+            </div>
+            <!-- Fazer o menu hamburguer utilizando um check box, o icone do menu é retirado
+            do unicode.org/chats, antes do cod. utilizamos &#x -->
+            <nav>
+                <input type="checkbox" id="check">
+                <!-- Essa label associa o icone ao checkbox -->
+                <label for="check">&#x2630;</label> 
+                <ul>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#javascript">JavaScript</a></li>
+                    <li><a href="#links">Links Úteis</a></li>
+                </ul>
+
+            </nav>
 
         </div>
     </header>
@@ -35,21 +52,21 @@
        </div> 
     </main>
     <!--HTML5-->
-    <section>
+    <section id="html">
        <div class="Container">
             <h2>HTML5</h2>
             <h3>A HTML é a linguagem principal da web</h3>   
        </div>  
     </section>
     <!--CSS3-->
-    <section>
+    <section id="css">
         <div class="Container">
             <h2>CSS3</h2>
             <h3>O CSS complementa o HTML</h3>
         </div>
     </section>
     <!--JavaScript-->
-    <section> 
+    <section id="javascript"> 
         <div class="Container">
             <h2>JavaScript</h2>
             <h3>Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web</h3>
@@ -57,7 +74,7 @@
         
     </section>
      <!--Links Úteis-->
-     <Section>
+     <section id="links">
         <div class="Container">
             <h2>Links Úteis</h2>
             <h3>Planejamento</h3>
@@ -65,12 +82,13 @@
             <h3>Ajuda</h3>
         </div>
         
-     </Section>
+     </section>
      <!--Rodapé-->
      <footer>
         <div class="Container">
 
         </div>
      </footer>
+     <a href="#inicio" id="topo"><img src="./img/topo.png" alt=""></a>
 </body>
 </html>
