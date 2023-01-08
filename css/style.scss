@@ -25,6 +25,15 @@ body{
    justify-content: space-between;
      
 }
+.Botao{
+    text-decoration: none;
+    color:$fontSecondaryColor;
+    font-size: 1.3em;
+    font: 700;
+    background-color:$fontDefaultColor;
+    padding: 10px 40px;
+    border-radius: 25px;
+}
 /* Topo fixar o topo no canto inferior direito */
 #topo{
     position: fixed;
@@ -32,8 +41,19 @@ body{
     bottom: 10px;
 }
 header{
-    background-color: $fontDefaultColor;
-    
+    background-color: $fontDefaultColor;   
+}
+
+main{
+    .htmlColor{
+        color: $primaryHtmlColor;
+    }
+    .cssColor{
+        color: $primaryCssColor;
+    }
+    .jsColor{
+        color: $primaryJsColor;
+    }
 }
 /*Smartphone Portrait >>>>>>>>>>>>>>>>>*/
 
@@ -81,7 +101,32 @@ label{
 #check:checked ~ ul{
     right: 0;
 }
-
+main{
+    height: 75vh;
+    background: url(../img/Destaque_o20.png);
+    background-size: cover;
+    color: $fontDefaultColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1em;
+        margin: 20px 0px 50px 0px
+    }
+}
+#html{
+    h2{
+       font-size: 1.5em;
+    }
+    h3{
+        font-size: 1em;
+        margin: 20px 0px 50px 0px
+    }
+}
 /*Smartphone Landscape resoluções superiores a 576px >>>>>>>>>>>>>>>>*/
 @media(min-width: 576px){
 
@@ -89,6 +134,8 @@ label{
     .Container{
         max-width: 540px;
     }
+    
+
 }
 /*Tablet Portrait >>>>>>>>>>>>>>>>>>>>>*/
 @media(min-width: 768px){
@@ -97,6 +144,17 @@ label{
     .Container{
         max-width: 720px;
     } 
+
+    /* Destaque */
+    main{
+        height: 45vh;
+        h1{
+            font-size: 4em;
+        }
+        h2{
+            font-size: 2em;
+        }
+    }
 }
 /*Tablet Landscape >>>>>>>>>>>>>>>>>>>>*/
 @media(min-width: 992px){
@@ -105,17 +163,25 @@ label{
     .Container{
         max-width: 960px;
     } 
+
+    /* Destaque */
+    main{
+        height: 70vh; // 70% da pagina
+    }
 }
 /*PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media(min-width: 1200px){
 
     /*layout*/
+     
     .Container {
         max-width: 100%;
+
     }
     .Flex {
         width: 100%;
     }
+    
 
     /* Cabeçalho */
     header{
@@ -153,6 +219,17 @@ label{
     
     label{
         display: none;
+    }
+    main{
+        h1{
+            font-size: 5em;
+            padding-bottom: 50px;
+            padding-top: 30px;
+        }
+        h2{
+            font-size: 3em;
+        }
+        
     }
     
 }
