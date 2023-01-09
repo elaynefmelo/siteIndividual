@@ -25,11 +25,12 @@ body{
    justify-content: space-between;
      
 }
+
 .Botao{
     text-decoration: none;
     color:$fontSecondaryColor;
     font-size: 1.3em;
-    font: 700;
+    font-weight: 700;
     background-color:$fontDefaultColor;
     padding: 10px 40px;
     border-radius: 25px;
@@ -58,6 +59,25 @@ main{
 /*Smartphone Portrait >>>>>>>>>>>>>>>>>*/
 
 /*cabeçalho*/
+body{
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+        margin: 20px 0px 50px 0px;
+         font-weight: bold;
+    }
+    h3{
+        font-size: 1.1em;   
+    }
+    p{
+        margin: 20px 10px 50px 10px;
+        font-weight: bold;
+       
+        
+    }
+}
 header{
     height: 60px;
     #logo{
@@ -110,23 +130,41 @@ main{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    h1{
-        font-size: 2em;
-    }
-    h2{
-        font-size: 1em;
-        margin: 20px 0px 50px 0px
-    }
+    
 }
+
 #html{
-    h2{
-       font-size: 1.5em;
-    }
-    h3{
-        font-size: 1em;
-        margin: 20px 0px 50px 0px
+    background-color: $secondaryHtmlColor;
+    .Container{
+        padding: 50px 0px 100px 0;
+        justify-content: center;
+        text-align: center;
+    
     }
 }
+
+#css{
+    background-color: $secondaryCssColor;
+    .Container{
+        padding: 50px 0px 100px 0;
+        justify-content: center;
+        text-align: center;
+    
+    }
+}
+#javascript{
+    background-color: $secondaryJsColor;
+    .Container{
+        padding: 50px 0px 100px 0;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.imgSobre{
+    height: 150px;
+   
+}
+
 /*Smartphone Landscape resoluções superiores a 576px >>>>>>>>>>>>>>>>*/
 @media(min-width: 576px){
 

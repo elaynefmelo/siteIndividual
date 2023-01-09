@@ -26,7 +26,7 @@ body {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 1.3em;
-  font: 700;
+  font-weight: 700;
   background-color: #000000;
   padding: 10px 40px;
   border-radius: 25px;
@@ -55,6 +55,22 @@ main .jsColor {
 
 /*Smartphone Portrait >>>>>>>>>>>>>>>>>*/
 /*cabeçalho*/
+body h1 {
+  font-size: 2em;
+}
+body h2 {
+  font-size: 1.5em;
+  margin: 20px 0px 50px 0px;
+  font-weight: bold;
+}
+body h3 {
+  font-size: 1.1em;
+}
+body p {
+  margin: 20px 10px 50px 10px;
+  font-weight: bold;
+}
+
 header {
   height: 60px;
 }
@@ -105,20 +121,36 @@ main {
   justify-content: center;
   text-align: center;
 }
-main h1 {
-  font-size: 2em;
+
+#html {
+  background-color: #F16529;
 }
-main h2 {
-  font-size: 1em;
-  margin: 20px 0px 50px 0px;
+#html .Container {
+  padding: 50px 0px 100px 0;
+  justify-content: center;
+  text-align: center;
 }
 
-#html h2 {
-  font-size: 1.5em;
+#css {
+  background-color: #2965F1;
 }
-#html h3 {
-  font-size: 1em;
-  margin: 20px 0px 50px 0px;
+#css .Container {
+  padding: 50px 0px 100px 0;
+  justify-content: center;
+  text-align: center;
+}
+
+#javascript {
+  background-color: #F1BF26;
+}
+#javascript .Container {
+  padding: 50px 0px 100px 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.imgSobre {
+  height: 150px;
 }
 
 /*Smartphone Landscape resoluções superiores a 576px >>>>>>>>>>>>>>>>*/
