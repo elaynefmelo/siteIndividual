@@ -121,7 +121,10 @@ header{
 label{
     color: $fontSecondaryColor;
     font-size: 2.5em;
-    padding-right: 15px;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    //color: rgba(0,0,0,0.5);
 }
 #check:checked ~ ul{
     right: 0;

@@ -111,7 +111,9 @@ header nav ul li a {
 label {
   color: #FFFFFF;
   font-size: 2.5em;
-  padding-right: 15px;
+  position: fixed;
+  top: 5px;
+  right: 15px;
 }
 
 #check:checked ~ ul {
