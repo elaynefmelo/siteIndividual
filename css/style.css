@@ -62,6 +62,7 @@ main .jsColor {
 /*cabeçalho*/
 body h1 {
   font-size: 2em;
+  margin: 50px 0px 10px 0px;
 }
 body h2 {
   font-size: 1.5em;
@@ -164,6 +165,40 @@ main {
 
 .imgSobre {
   height: 150px;
+}
+
+#links {
+  padding: 20px;
+  background-color: #dcdbdb;
+}
+#links h2 {
+  text-align: center;
+  margin: 10px 0px 15px;
+}
+#links .Container {
+  padding: 20px;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+#links .Container h3 {
+  text-align: center;
+  margin: 20px 0px 30px;
+  font-size: 1.3em;
+}
+#links .Container ul img {
+  height: 60px;
+  padding: 0px 10px;
+  vertical-align: middle;
+}
+#links .Container ul li {
+  list-style: none;
+  padding: 10px;
+}
+#links .Container ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.3em;
+  font-weight: 700;
 }
 
 /*Smartphone Landscape resoluções superiores a 576px >>>>>>>>>>>>>>>>*/
@@ -313,6 +348,21 @@ main {
     flex-direction: row;
     justify-content: center;
     text-align: center;
+  }
+  #links h2 {
+    font-size: 4em;
+  }
+  #links .Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #links .Container h3 {
+    font-size: 3em;
+  }
+  #links .Container ul li a {
+    font-size: 2em;
   }
   .Botao {
     font-size: 2em;

@@ -66,6 +66,7 @@ main{
 body{
     h1{
         font-size: 2em;
+        margin: 50px 0px 10px 0px ;
     }
     h2{
         font-size: 1.5em;
@@ -175,6 +176,43 @@ main{
     height: 150px;
    
 }
+#links{
+    padding: 20px;
+    h2{
+        text-align: center;
+        margin: 10px 0px 15px;
+    }
+    background-color: #dcdbdb;
+    .Container{
+        padding: 20px;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+        h3{
+            text-align: center;
+            margin: 20px 0px 30px;
+            font-size: 1.3em;
+        }
+        ul{
+            img{
+                height: 60px;
+                padding: 0px 10px;
+                vertical-align: middle;
+            }
+            li{
+                list-style: none;
+                padding: 10px;
+                a{
+                    text-decoration: none;
+                    color: $fontDefaultColor;
+                    font-size: 1.3em;
+                    font-weight: 700;
+                    
+                }
+            }
+        }
+    }
+}
 
 /*Smartphone Landscape resoluções superiores a 576px >>>>>>>>>>>>>>>>*/
 @media(min-width: 576px){
@@ -187,7 +225,6 @@ main{
         padding-top: 50px;
     }
     
-
 }
 /*Tablet Portrait >>>>>>>>>>>>>>>>>>>>>*/
 @media(min-width: 768px){
@@ -308,6 +345,7 @@ main{
         }	
     }
     
+   
     .imgSobre{
         display: inline;
         height: 300px;
@@ -362,6 +400,28 @@ main{
             text-align: center;
         
         }	
+    }
+    #links{
+        h2{
+            font-size: 4em;
+        }
+        .Container{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+            h3{
+                font-size: 3em;
+            }
+            ul{
+                li{
+                    a{
+                        font-size: 2em;
+                    }
+                }
+            }
+           
+        }
     }
     
     .Botao{
