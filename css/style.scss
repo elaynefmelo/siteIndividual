@@ -257,6 +257,16 @@ main{
     main{
         height: 70vh; // 70% da pagina
     }
+    #links{
+        
+        .Container{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+            
+        }
+    }
 }
 /*PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media(min-width: 1200px){
