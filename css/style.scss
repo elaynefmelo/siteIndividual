@@ -1,5 +1,6 @@
 /*Folha de estilo do site individual HTML, CSS e JavaScript*/
 @import "./cores.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 //css reset
 *{
@@ -7,8 +8,6 @@
     border: 0;
     padding: 0;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -213,6 +212,32 @@ main{
         }
     }
 }
+footer{
+    padding: 5px;
+    background-color: $fontDefaultColor;
+    color: $fontSecondaryColor;
+    text-align: center;
+    
+    .Container{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+        ul{
+            list-style: none;
+            
+            li{
+                display: inline;
+                a{
+                    img{
+                        width:40px;
+                        padding: 0px 10px 0px 10px ;
+                    }
+                }
+            }
+            
+        }
+    }
+}
 
 /*Smartphone Landscape resoluções superiores a 576px >>>>>>>>>>>>>>>>*/
 @media(min-width: 576px){
@@ -265,6 +290,15 @@ main{
             justify-content:space-around;
             align-items: center;
             
+        }
+    }
+    footer{
+        .Container{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 10px;
+            align-items: center;
         }
     }
 }
@@ -354,8 +388,7 @@ main{
         
         }	
     }
-    
-   
+
     .imgSobre{
         display: inline;
         height: 300px;
@@ -431,6 +464,22 @@ main{
                 }
             }
            
+        }
+    }
+    footer{
+        .Container{
+            ul{
+                li{
+                   a{
+                    img{
+                        width: 60px;
+                    }
+                   }
+                }
+            }
+        }
+        #criador{
+            font-size: 1.5em;
         }
     }
     

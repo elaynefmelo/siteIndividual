@@ -201,6 +201,28 @@ main {
   font-weight: 700;
 }
 
+footer {
+  padding: 5px;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+}
+footer .Container {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px;
+}
+footer .Container ul {
+  list-style: none;
+}
+footer .Container ul li {
+  display: inline;
+}
+footer .Container ul li a img {
+  width: 40px;
+  padding: 0px 10px 0px 10px;
+}
+
 /*Smartphone Landscape resoluções superiores a 576px >>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
   /*layout*/
@@ -242,6 +264,13 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+  }
+  footer .Container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
     align-items: center;
   }
 }
@@ -369,6 +398,12 @@ main {
   }
   #links .Container ul li a {
     font-size: 2em;
+  }
+  footer .Container ul li a img {
+    width: 60px;
+  }
+  footer #criador {
+    font-size: 1.5em;
   }
   .Botao {
     font-size: 2em;
